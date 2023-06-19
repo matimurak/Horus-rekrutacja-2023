@@ -37,6 +37,11 @@ public class Wall implements Structure {
     }
 
     public int count() {
-        return 0;
+        ListIterator<Block> blocksIterator = blocks.listIterator();
+        int blocksCount=0;
+        while (blocksIterator.hasNext())
+            blocksCount++;
+
+        return blocksCount;
     }
 }
